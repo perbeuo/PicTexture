@@ -25,7 +25,7 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>555</width>
+         <width>505</width>
          <height>347</height>
         </rect>
        </property>
@@ -55,6 +55,11 @@
           <height>150</height>
          </size>
         </property>
+        <item>
+         <property name="text">
+          <string>Rock</string>
+         </property>
+        </item>
         <item>
          <property name="text">
           <string>Sand</string>
@@ -95,9 +100,9 @@
          </widget>
         </item>
         <item>
-         <widget class="QToolButton" name="btnContain">
+         <widget class="QToolButton" name="btnRectangle">
           <property name="text">
-           <string>Contain</string>
+           <string>Rectangle</string>
           </property>
           <property name="checkable">
            <bool>true</bool>
@@ -114,11 +119,63 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btnCanny">
-        <property name="text">
-         <string>Convert</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QComboBox" name="comboFrom">
+          <item>
+           <property name="text">
+            <string>Rock</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tree</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Water</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboTo">
+          <item>
+           <property name="text">
+            <string>Rock</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tree</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Water</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnConvert">
+          <property name="text">
+           <string>Convert</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="QPushButton" name="btnContour">
@@ -128,11 +185,44 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btnClear">
-        <property name="text">
-         <string>Clear</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QComboBox" name="comboClear">
+          <item>
+           <property name="text">
+            <string>Rock</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tree</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Water</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>All</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnClear">
+          <property name="text">
+           <string>Clear</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="QPushButton" name="btnSave">

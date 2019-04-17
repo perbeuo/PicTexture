@@ -27,6 +27,8 @@ private:
     cv::Mat texFile;
     QPolygon poly;
     QImage imgSelectArea;
+    QPoint recStart;
+    QPoint recEnd;
     bool startDrawBound;
     bool startPaint;
     cv::Mat get_contour();
@@ -35,13 +37,19 @@ private:
     void mouseReleaseEvent ( QMouseEvent * e );
 //    void paintEvent ( QPaintEvent * );
     bool color_similar(int ax, int ay, int bx, int by, double threshold);
+//    void clearAt(cv::Mat origin, int i, int j);
+    void refreshSrcImg();
 
 private slots:
     void open_image();
-    void on_btnCanny_clicked();
+//    void on_btnCanny_clicked();
     void on_btnContour_clicked();
     void on_btnClear_clicked();
     void on_btnSave_clicked();
+    void on_btnConvert_clicked();
+    void on_btnPaint_clicked();
+    void on_btnContain_clicked();
+    void on_btnRectangle_clicked();
 };
 
 #endif // MAINWINDOW_H
