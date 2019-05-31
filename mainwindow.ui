@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>771</width>
-    <height>443</height>
+    <width>859</width>
+    <height>495</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,8 +25,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>505</width>
-         <height>347</height>
+         <width>498</width>
+         <height>399</height>
         </rect>
        </property>
       </widget>
@@ -82,7 +82,7 @@
         <item>
          <widget class="QToolButton" name="btnColorChoose">
           <property name="text">
-           <string>Color</string>
+           <string>Similar Color</string>
           </property>
           <property name="checkable">
            <bool>true</bool>
@@ -92,7 +92,7 @@
         <item>
          <widget class="QToolButton" name="btnSelect">
           <property name="text">
-           <string>Select</string>
+           <string>Free Select</string>
           </property>
           <property name="checkable">
            <bool>true</bool>
@@ -102,7 +102,7 @@
         <item>
          <widget class="QToolButton" name="btnRectangle">
           <property name="text">
-           <string>Rectangle</string>
+           <string>Rectangle Select</string>
           </property>
           <property name="checkable">
            <bool>true</bool>
@@ -178,13 +178,6 @@
        </layout>
       </item>
       <item>
-       <widget class="QPushButton" name="btnContour">
-        <property name="text">
-         <string>Contour</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
          <widget class="QComboBox" name="comboClear">
@@ -240,7 +233,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>771</width>
+     <width>859</width>
      <height>22</height>
     </rect>
    </property>

@@ -31,10 +31,12 @@ private:
     QPoint recEnd;
     bool startDrawBound;
     bool startPaint;
+    double mScale;
     cv::Mat get_contour();
     void mousePressEvent ( QMouseEvent * e );
     void mouseMoveEvent ( QMouseEvent * e );
     void mouseReleaseEvent ( QMouseEvent * e );
+//    void wheelEvent(QWheelEvent *event);
 //    void paintEvent ( QPaintEvent * );
     bool color_similar(int ax, int ay, int bx, int by, double threshold);
 //    void clearAt(cv::Mat origin, int i, int j);
@@ -50,6 +52,7 @@ private slots:
     void on_btnPaint_clicked();
     void on_btnContain_clicked();
     void on_btnRectangle_clicked();
+    void on_btnColorChoose_clicked();
 };
 
 #endif // MAINWINDOW_H

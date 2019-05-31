@@ -32,7 +32,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
     startDrawBound(false),
-    startPaint(false)
+    startPaint(false),
+    mScale(1.0)
 {
     ui->setupUi(this);
     QObject::connect(ui->actionOpenImage, SIGNAL(triggered(bool)), this, SLOT(open_image()));
@@ -78,6 +79,18 @@ void MainWindow::open_image()
     ui->scrollArea->setMaximumWidth(labelPic->width()+2);
     ui->scrollArea->setWidget(labelPic);
 }
+
+//void MainWindow::wheelEvent(QWheelEvent *event)
+//{
+
+//    Mat src;
+//    cvtColor(srcPic, src, COLOR_BGR2RGB);
+//    imgSelectArea = QImage(src.data, src.cols, src.rows, src.step, QImage::Format_RGB888);
+//    QPixmap pixmap = QPixmap::fromImage(imgSelectArea);
+//    pixmap.scaled(QSize(50,50), Qt::KeepAspectRatioByExpanding);
+//    labelPic->setPixmap(pixmap);
+//    return;
+//}
 
 void MainWindow::mousePressEvent(QMouseEvent *e)
 {
